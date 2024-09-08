@@ -1,0 +1,146 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+   
+}
+h1 {
+    text-align: center;
+    color: #4fa1f8;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #4fa1f8;
+    margin-bottom: 30px;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(79, 161, 248, 0.3);
+    margin-bottom: 30px;
+   
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #4fa1f8;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #4fa1f8;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+input[type="submit"] {
+    background-color: #4fa1f8;
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #fff;
+    box-shadow: 0 0 20px #4fa1f8;
+}
+#result {
+    display: none;
+}
+#resultText {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.back-link {
+    display: inline-block;
+    color: #4fa1f8;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+.gauge {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px 100px 0 0;
+    background-color: #222;
+    overflow: hidden;
+    position: relative;
+}
+.gauge-fill {
+    width: 100%;
+    height: 100%;
+    background-color: #4fa1f8;
+    transform-origin: center bottom;
+    transition: transform 1s ease-out;
+}
+.gauge-cover {
+    width: 180px;
+    height: 90px;
+    border-radius: 90px 90px 0 0;
+    background-color: #000;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.gauge-value {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4fa1f8;
+}
+h3 {
+    text-align: center;
+    color: #4fa1f8;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #4fa1f8;
+    margin-bottom: 30px;
+}
+#status{
+    text-align: center;
+    color: #4fa1f8;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #4fa1f8;
+    margin-bottom: 30px;
+}
+.yes{
+    color:red;
+
+}
+.no{
+    color:green;
+}

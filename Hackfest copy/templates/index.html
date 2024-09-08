@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condensation Risk Predictor</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <h1>Cosmic Condensation Risk Predictor</h1>
+        <div class="card">
+            <form id="predictionForm" action="{{ url_for('index') }}" method="post">
+                <label for="temperature">Temperature (°C):</label>
+                <input type="text" id="temperature" name="temperature" required>
+                
+                <label for="humidity">Humidity (%):</label>
+                <input type="text" id="humidity" name="humidity" required>
+                
+                <label for="pressure">Pressure (hPa):</label>
+                <input type="text" id="pressure" name="pressure" required>
+                
+                <label for="temp_diff">Temperature Difference (°C):</label>
+                <input type="text" id="temp_diff" name="temp_diff" required>
+                
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+
+        <div id="result" class="card">
+            <h2>Prediction Result</h2>
+            <p id="resultText"></p>
+            <div class="gauge">
+                <div class="gauge-fill"></div>
+                <div class="gauge-cover"></div>
+                <div class="gauge-value">0%</div>
+            </div>
+            <a href="#" class="back-link" id="backLink">Predict Again</a>
+        </div>
+    </div>
+    
+    <h3>Prediction Result</h3>
+    <div id="status">Condensation risk: {{ result }}</div>
+
+    <!-- JavaScript -->
+    <script src="static/script.js"></script>
+</body>
+</html>
